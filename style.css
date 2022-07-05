@@ -1,0 +1,192 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.game {
+    height: 100vh;
+    background: url('bg.jpg') center center/cover no-repeat;
+}
+.wrapper {
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 600px;
+}
+
+.btns {
+    margin: 0 auto;
+    width: 430px;
+    height: 30px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn, .score, .back {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f4b2a1;
+    border: 3px solid #f39285;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+}
+.score {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back {
+    width: 50px;
+    display: none;
+}
+.btn.back.active {
+    display: block;   
+}
+.score.active {
+    display: none;
+}
+.btn.active {
+    display: none;
+}
+.btn:hover {        
+    background-color: #f39285;
+}
+
+.field {
+    margin: 50px auto;
+    padding: 3px;
+    width: 430px;
+    height: 430px;
+    background-color: #f39285;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: #f4b2a1;
+    border-radius: 10px;
+    margin: 3px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.winner, .loser {
+    margin: 50px auto;
+    padding: 20px 0;
+    background-color: #f39285;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    display: none;    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 220px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.winner div {
+    width: 100%;
+}
+
+.loser div {
+    width: 100%;
+}
+
+.winner.active {
+    display: flex;
+}
+.loser.active {
+    display: flex;    
+}
+  
+
+
+.tab {
+    display: none;
+}
+  
+.tab.active {
+    animation: 1s forwards tab;
+}
+  
+@keyframes tab {
+    0% {
+      display: none;
+      opacity: 0;
+      width: 200px;
+      height: 100px;
+      top: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+      width: 350px;
+      height: 150px;
+    }
+}
+
+
+
+.sum2 {
+    background-color: #fafa79;
+}
+.sum4 {
+    background-color: #95fdf9;
+}
+.sum8 {
+    background-color: #ffb3fc;
+}
+.sum16 {
+    background-color: #8af795;
+}
+.sum32 {
+    background-color: #ffdc68;
+}
+.sum64 {
+    background-color: #4eccfa;
+}
+.sum128 {
+    background-color: #f96af4;
+}
+.sum256 {
+    background-color: #4ef75f;
+}
+.sum512 {
+    background-color: #578cff;
+}
+.sum1024{
+    background-color: #f023d8;
+}
+.sum2048 {
+    background-color: #33a354;
+}
+

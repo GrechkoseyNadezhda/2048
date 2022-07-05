@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game">
+    <div class="wrapper" id="wrapper">
+        <div class="btns">
+            <div class="score active">SCORE: <span id="points"></span></div>
+            <button class="btn" id="btn_start">START</button>
+            <button class="btn back" id="btn_back" ><svg width="35" height="35" fill="rgba(0, 0, 0, 0.6)" viewBox="0 0 16 13">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+                <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+              </svg></button>
+            <button class="btn" id="btn_reverse">REVERSE</button>
+        </div>
+        <div class="field">                 
+            <div class="item" id="s00"></div>
+            <div class="item" id="s01"></div>
+            <div class="item" id="s02"></div>
+            <div class="item" id="s03"></div>
+    
+            <div class="item" id="s10"></div>
+            <div class="item" id="s11"></div>
+            <div class="item" id="s12"></div>
+            <div class="item" id="s13"></div>
+            
+            <div class="item" id="s20"></div>
+            <div class="item" id="s21"></div>
+            <div class="item" id="s22"></div>
+            <div class="item" id="s23"></div>
+    
+            <div class="item" id="s30"></div>
+            <div class="item" id="s31"></div>
+            <div class="item" id="s32"></div>
+            <div class="item" id="s33"></div>
+        </div> 
+        <div class="winner tab">
+            <div>CONGRATULATIONS!<br>
+                YOU WIN</div>
+            <div>SCORE: <span id="win_score"></span> </div> 
+        </div>
+        <div class="loser tab">
+            <div>GAME OVER <br>
+            YOU LOSE</div>
+            <div>SCORE: <span id="lose_score"></span> </div> 
+        </div>   
+    </div>
+</div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
